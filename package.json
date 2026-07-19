@@ -1,0 +1,27 @@
+{
+  "name": "teob-home",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Event-sourced smart-home brain for Home Assistant — programmable heuristics in TypeScript, decision timeline, energy management, optional LLM copilot",
+  "type": "module",
+  "license": "Apache-2.0",
+  "packageManager": "pnpm@11.14.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.0",
+    "@lambda-house/teob-ts": "^0.2.1",
+    "hono": "^4.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^7.0.2"
+  }
+}
